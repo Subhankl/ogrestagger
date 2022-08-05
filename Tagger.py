@@ -26,11 +26,11 @@ async def start(event):
   await event.reply("**👋 **Salam** \n\n**💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyanal botam**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün**\n\n/help əmrindən istifadə edin**",
             buttons=(
                    
-		      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/CrazyTagBot?startgroup=a')],
-                      [Button.url('Dəstək Qurupu 👨‍💻', 'https://t.me/Crazysup')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/crazy_resmi')],
-                      [Button.url('Crazy MMC 🔖', 'https://t.me/crazymmc')],
-		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/Dakanca_Hozu')] 
+		      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/JasmineTaggerBot?startgroup=a')],
+                      [Button.url('Dəstək Qurupu 👨‍💻', 'https://t.me/CraftySup')],
+                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/Tamistedigim')],
+                      [Button.url('Məkanımız 🔖', 'https://t.me/Alay57Chat')],
+		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/iamZ3Nt4')] 
                     ),
                     link_preview=False
                    )
@@ -39,21 +39,21 @@ async def help(event):
   helptext = "**@CrazyTagBot Butonları 🤖**\n\n**/sehidler - ŞƏHİDLƏRİMİZİN ADLARI İLI ÇAĞIRAR\n**/cancel - botu dayandırar**\n**/tag <səbəb> - 5-li tag edər**\n**/etag <səbəb> - Emoji ilə tag edərr**\n**/mtag <səbəb> - mafia rolları ilə tag edər\n**/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n**/admins <səbəb> - Yönəticiləri tək tək tag edər\n**/btag <səbəb> - Bayrağla tag edər**\n/stag <səbəb> - Şəhərlərimizin adları ilə tag edər"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/CrazyTagBot?startgroup=a')],
-                      [Button.url('Dəstək Qurupu 👨‍💻', 'https://t.me/Crazysup')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/crazy_resmi')],
-                      [Button.url('Crazy Mmc', 'https://t.me/crazymmc')],
-		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/Dakanca_Hozu')],
+                      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/JasmineTaggerBot?startgroup=a')],
+                      [Button.url('Dəstək Qurupu 👨‍💻', 'https://t.me/CraftySuo')],
+                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/Tamistedigim')],
+                      [Button.url('Məkanımız', 'https://t.me/Alay57Chat')],
+		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/iamZ3NT4')],
                     ),
                     link_preview=False
                    )
 	
 @client.on(events.NewMessage(pattern="^/qurup$"))
 async def help(event):
-  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə - @Dakanca_Hozu"
+  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə - @iamZ3NT4"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('༒︎ 𝐂𝚁𝐀𝚉𝐘 | 𝐓𝙴𝐀𝙼 𓆙 ', 'https://t.me/CrazyTeamss')],
+                      [Button.url('༒︎ Muazzam |Media 𓆙 ', 'https://t.me/MuazzamMedia')],
                     ),
                     link_preview=False
                    )
