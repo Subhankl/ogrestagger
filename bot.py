@@ -26,17 +26,17 @@ async def start(event):
   await event.reply("**👋 **Salam** \n\n**💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyanal botam**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün**\n\n/help əmrindən istifadə edin**",
             buttons=(
                    
-		      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/CrazyTagBot?startgroup=a')],
-                      [Button.url('Dəstək Qurupu 👨‍💻', 'https://t.me/Crazysup')],
+		      [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/SumqayitTaggerBot?startgroup=a')],
+                      [Button.url('Support‍✨️', 'https://t.me/Crazysup')],
                       [Button.url('Rəsmi Kanal 🔖', 'https://t.me/crazy_resmi')],
-                      [Button.url('Crazy MMC 🔖', 'https://t.me/crazymmc')],
-		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/Dakanca_Hozu')] 
+                      [Button.url('Resmi Group ⚡️', 'https://t.me/sumqayitchattt')],
+		      [Button.url('Owner 👨🏻‍💻', 'https://t.me/Rexxuxxnxx')] 
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**@CrazyTagBot Butonları 🤖**\n\n**/sehidler - ŞƏHİDLƏRİMİZİN ADLARI İLI ÇAĞIRAR\n**/cancel - botu dayandırar**\n**/tag <səbəb> - 5-li tag edər**\n**/etag <səbəb> - Emoji ilə tag edərr**\n**/mtag <səbəb> - mafia rolları ilə tag edər\n**/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n**/admins <səbəb> - Yönəticiləri tək tək tag edər\n**/btag <səbəb> - Bayrağla tag edər**\n/stag <səbəb> - Şəhərlərimizin adları ilə tag edər"
+  helptext = "**@SumqayitTaggerBot Butonları 🤖**\n\n**/sehidler - ŞƏHİDLƏRİMİZİN ADLARI İLI ÇAĞIRAR\n**/cancel - botu dayandırar**\n**/tag <səbəb> - 5-li tag edər**\n**/etag <səbəb> - Emoji ilə tag edərr**\n**/mtag <səbəb> - mafia rolları ilə tag edər\n**/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n**/admins <səbəb> - Yönəticiləri tək tək tag edər\n**/btag <səbəb> - Bayrağla tag edər**\n/stag <səbəb> - Şəhərlərimizin adları ilə tag edər"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('➕ Məni Qurupa əlavə et ➕', 'http://t.me/CrazyTagBot?startgroup=a')],
