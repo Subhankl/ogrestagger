@@ -59,7 +59,7 @@ async def help(event):
                    )
 	
 	
-sehidler = "Abdullayev Qəzənfər Nəcəf Abdullayev Nurlan İnqilab Abdullayev Nicat Mirnəbi Abdullayev Məhəmməd Ramazan Allahverənov Telman Fazil Alıyev Qələndər Nofəl Abdullayev İbrahim Habil Abdullayev Elşən Sabir Abdullayev Həsən Qərib󠁧󠁢󠁷󠁬󠁳󠁿󠁧󠁢󠁷󠁬󠁳󠁿".split(" ")
+sehidler = "Abdullayev Qəzənfər Polad Həşimov Anar Kazımov Ramazanov Vüsal Ümüd Heydərov Fərid Teymurov Əlövsət Məmmədov Riyad Əliyarov Şöhrət Namazov Gümrah Səfərquliyev Nəcəf Abdullayev Nurlan İnqilab Abdullayev Nicat Mirnəbi Abdullayev Məhəmməd Ramazan Allahverənov Telman Fazil Alıyev Qələndər Nofəl Abdullayev İbrahim Habil Abdullayev Elşən Sabir Abdullayev Həsən Qərib󠁧󠁢󠁷󠁬󠁳󠁿󠁧󠁢󠁷󠁬󠁳󠁿".split(" ")
 
 
 @client.on(events.NewMessage(pattern="^/sehidler ?(.*)"))
