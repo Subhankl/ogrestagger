@@ -26,9 +26,9 @@ async def start(event):
   await event.reply("**👋 **Salam** \n\n**💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyanal botam**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün**\n\n/help əmrindən istifadə edin**",
             buttons=(
                    
-		      [Button.url('✨️ Məni Qurupa əlavə et ✨️', 'http://t.me/SumqayitTaggerBot?startgroup=a')],
-                      [Button.url('Support 🐊', 'https://t.me/sumqayitchattt')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/CreativBlog')],
+		      [Button.url('✨️ Məni Qurupa əlavə et', 'http://t.me/SumqayitTaggerBot?startgroup=a')],
+                      [Button.url('Ｓｕｐｐｏｒｔ 🐊', 'https://t.me/sumqayitchattt')],
+                      [Button.url('ʀ əｓᴍ ɪ ᴋᴀɴᴀʟ ❤️‍🔥', 'https://t.me/CreativBlog')],
                       [Button.url('Məkanımız 🔖', 'https://t.me/sumqayitchattt')],
 		      [Button.url('Owner ❤️‍🔥', 'https://t.me/Rexxuxxnxx')] 
                     ),
