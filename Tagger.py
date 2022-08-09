@@ -50,7 +50,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/qurup$"))
 async def help(event):
-  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə -  Rexxuxxnxx
+  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə -  @Rexxuxxnxx"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('༒︎ Sυмqαуιт Cнαт🇦🇿 𓆙 ', 'https://t.me/sumqayitchattt')],
