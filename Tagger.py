@@ -23,7 +23,7 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**👋 **Salam** \n\n**💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyanal botam**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün**\n\n/help əmrindən istifadə edin**",
+  await event.reply("**👋 **Salam** \n\n**💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyalı botam**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün**\n\n/help əmrindən istifadə edin**",
             buttons=(
                    
 		      [Button.url('ᴏᴡɴᴇʀ ❤️‍🔥', 'http://t.me/Rexxuxxnxx')],
@@ -468,7 +468,12 @@ async def cancel(event):
   anlik_calisan.remove(event.chat_id)
 	
 
-@client.on(events.NewMessage(pattern="^/tektag ?(.*)"))
+
+fedler = "LC DTÖ KARONA ERROR404 GOLD FC XAOS ASO HELL STFU BEHEMOTH KARABAKH TTK GGT TAO DEV FM DAB BQB ATOM ELİT BTO CRAZY ALPHA BTB FELLİX QANUN RCI SO XTQ BT DTB KİNG HOST AMON DTX TAD KOBRA"       ".split"
+  (" ")                 
+  
+  
+@client.on(events.NewMessage(pattern="^/fdtag ?(.*)"))
 async def mentionall(event):
   global tekli_calisan
   if event.is_private:
@@ -499,7 +504,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"**👤 - [{usr.first_name}](tg://user?id={usr.id}) \n**"
+      usrtxt += f"[{random.choice(fedler)}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
         await event.respond("**Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər  @@Rexxuxxnxx ✅**")
         return
