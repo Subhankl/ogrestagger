@@ -466,14 +466,7 @@ async def mentionall(event):
 async def cancel(event):
   global anlik_calisan
   anlik_calisan.remove(event.chat_id)
-	
-
-
-fedler = "LC DTÖ KARONA ERROR404 GOLD FC XAOS ASO HELL STFU BEHEMOTH KARABAKH TTK GGT TAO DEV FM DAB BQB ATOM ELİT BTO CRAZY ALPHA BTB FELLİX QANUN RCI SO XTQ BT DTB KİNG HOST AMON DTX TAD KOBRA       ".split"
-  (" ")                 
-  
-  
-@client.on(events.NewMessage(pattern="^/fdtag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/tektag ?(.*)"))
 async def mentionall(event):
   global tekli_calisan
   if event.is_private:
@@ -504,7 +497,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{random.choice(fedler)}](tg://user?id={usr.id}) \n**"
+      usrtxt += f"**👤 - [{usr.first_name}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
         await event.respond("**Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər  @@Rexxuxxnxx ✅**")
         return
