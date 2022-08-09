@@ -30,7 +30,7 @@ async def start(event):
                       [Button.url('sᴜᴘᴘᴏʀᴛ 🐊', 'https://t.me/sumqayitchattt')],
                       [Button.url('ʀ əｓᴍ ɪ ᴋᴀɴᴀʟ ❤️‍🔥', 'https://t.me/CreativBlog')],
                       [Button.url('Mᴇᴋᴀɴɪᴍɪᴢ 🔖', 'https://t.me/sumqayitchattt')],
-		      [Button.url('💫 ᴍᴇɴɪ ǫʀᴜᴘᴜɴᴀ ᴇʟᴀᴠᴇ ᴇᴛ', 'https://t.me/SumqayitTaggerBot')] 
+		      [Button.url('💫 ᴍᴇɴɪ ǫʀᴜᴘᴜɴᴀ ᴇʟᴀᴠᴇ ᴇᴛ', 'https://t.me/SumqayitTaggerBot?startgroup=a')] 
                     ),
                     link_preview=False
                    )
