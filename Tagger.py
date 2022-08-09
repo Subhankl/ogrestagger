@@ -26,17 +26,17 @@ async def start(event):
   await event.reply("**👋 **Salam** \n\n**💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyanal botam**\n\n**✅ Botun istifadə qaydasını öyrənmək üçün**\n\n/help əmrindən istifadə edin**",
             buttons=(
                    
-		      [Button.url('✨️ Məni Qurupa əlavə et', 'http://t.me/SumqayitTaggerBot?startgroup=a')],
+		      [Button.url('Owner ❤️‍🔥', 'http://t.me/Rexxuxxnxx')],
                       [Button.url('Ｓｕｐｐｏｒｔ 🐊', 'https://t.me/sumqayitchattt')],
                       [Button.url('ʀ əｓᴍ ɪ ᴋᴀɴᴀʟ ❤️‍🔥', 'https://t.me/CreativBlog')],
                       [Button.url('Məkanımız 🔖', 'https://t.me/sumqayitchattt')],
-		      [Button.url('Owner ❤️‍🔥', 'https://t.me/Rexxuxxnxx')] 
+		      [Button.url('💫 ᴍᴇɴɪ ǫʀᴜᴘᴜɴᴀ ᴇʟᴀᴠᴇ ᴇᴛ', 'https://t.me/SumqayitTaggerBot')] 
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**@SumqayitTaggerBot Komandaları 🤖**\n\n**/sehidler - ŞƏHİDLƏRİMİZİN ADLARI İLI ÇAĞIRAR\n**/cancel - botu dayandırar**\n**/tag <səbəb> - 5-li tag edər**\n**/etag <səbəb> - Emoji ilə tag edərr**\n**/mtag <səbəb> - mafia rolları ilə tag edər\n**/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n**/admins <səbəb> - Yönəticiləri tək tək tag edər\n**/btag <səbəb> - Bayrağla tag edər**\n/stag <səbəb> - Şəhərlərimizin adları ilə tag edər"
+  helptext = "**@SumqayitTaggerBot Komandaları 🤖**\n\n**/stag - Şehid adları ıle tag eder\n**/cancel - botu dayandırar**\n**/tag <səbəb> - 5-li tag edər**\n**/etag <səbəb> - Emoji ilə tag edərr**\n**/mtag <səbəb> - mafia rolları ilə tag edər\n**/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n**/admins <səbəb> - Yönəticiləri tək tək tag edər\n**/btag <səbəb> - Bayrağla tag edər**\n/stag <səbəb> - Şəhərlərimizin adları ilə tag edər"
   await event.reply(helptext,
                     buttons=(
                         [Button.url('✨️ Məni Qurupa əlavə et ✨️', 'http://t.me/SumqayitTaggerBot?startgroup=a')],
@@ -50,7 +50,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/qurup$"))
 async def help(event):
-  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə -  @iamZ3NT4" 
+  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə -  Rexxuxxnxx
   await event.reply(helptext,
                     buttons=(
                       [Button.url('༒︎ Sυмqαуιт Cнαт🇦🇿 𓆙 ', 'https://t.me/sumqayitchattt')],
@@ -62,7 +62,7 @@ async def help(event):
 sehidler = "Abdullayev Qəzənfər Polad Həşimov Anar Kazımov Ramazanov Vüsal Ümüd Heydərov Fərid Teymurov Əlövsət Məmmədov Riyad Əliyarov Şöhrət Namazov Gümrah Səfərquliyev Nəcəf Abdullayev Nurlan İnqilab Abdullayev Nicat Mirnəbi Abdullayev Məhəmməd Ramazan Allahverənov Telman Fazil Alıyev Qələndər Nofəl Abdullayev İbrahim Habil Abdullayev Elşən Sabir Abdullayev Həsən Qərib󠁧󠁢󠁷󠁬󠁳󠁿󠁧󠁢󠁷󠁬󠁳󠁿".split(" ")
 
 
-@client.on(events.NewMessage(pattern="^/sehidler ?(.*)"))
+@client.on(events.NewMessage(pattern="^/stag ?(.*)"))
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
