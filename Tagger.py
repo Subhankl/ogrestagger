@@ -129,7 +129,7 @@ async def cancel(event):
 	
 	
 
-adlar = "Cristiano Ronaldo" "Pele" "Maradona" "Şahruddin Məmmədov" "Ayhan Arazlı" "Emil Balayev" "Məmməd Hüseynov" "Nihad Tamazov" "Rahil" "Məmmədov Rauf" "Hüseynli Cəbrayıl" "Nihad Quliyev" "Maksim Medvedev" "Zamiq Əliyev" "Medina" "Abbas Hüseynov" "Tural Bayramov" "İsmayıl İbrahimli" "Elvin Cəfərquliyev" "Cavid Bayramov" "Hüseyn Hüseynzadə" "Musa Qurbanlı" "Mahir Əmrəli" "Zaur Fərzəliyev" "Arif Əsədov" "Rəşad Sadıqov" "Qurban Qurbanov" "Tərlan Əhmədov" "Aslan Kərimov" "Rəşad Sadıqov" "Mahir Şükürov" "Mahmud Qurbanov" "Qurban Qurbanov" "Emin Ağayev" "Vüqar Nadirov" "Rahid Əmirquliyev" "Vaqif Cavadov" "Ruslan Abışov" "Cavid Hüseynov" "Rauf Əliyev" "Samir Abbasov" "Araz Abdullayev" "Lionel Messi"
+adlar = "Cristiano Ronaldo" "Pele" "Maradona" "Şahruddin Məmmədov" "Ayhan Arazlı" "Emil Balayev" "Məmməd Hüseynov" "Nihad Tamazov" "Rahil" "Məmmədov Rauf" "Hüseynli Cəbrayıl" "Nihad Quliyev" "Maksim Medvedev" "Zamiq Əliyev" "Medina" "Abbas Hüseynov" "Tural Bayramov" "İsmayıl İbrahimli" "Elvin Cəfərquliyev" "Cavid Bayramov" "Hüseyn Hüseynzadə" "Musa Qurbanlı" "Mahir Əmrəli" "Zaur Fərzəliyev" "Arif Əsədov" "Rəşad Sadıqov" "Qurban Qurbanov" "Tərlan Əhmədov" "Aslan Kərimov" "Rəşad Sadıqov" "Mahir Şükürov" "Mahmud Qurbanov" "Qurban Qurbanov" "Emin Ağayev" "Vüqar Nadirov" "Rahid Əmirquliyev" "Vaqif Cavadov" "Ruslan Abışov" "Cavid Hüseynov" "Rauf Əliyev" "Samir Abbasov" "Araz Abdullayev" "Lionel Messi".split(" ")
 
 @client.on(events.NewMessage(pattern="^/ftag ?(.*)"))
 async def mentionall(event):
