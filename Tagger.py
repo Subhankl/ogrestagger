@@ -129,10 +129,10 @@ async def cancel(event):
 	
 	
 
-seherler = "Ağcabədi Ağdam Ağdaş Ağdərə Ağıstafa Ağsu Astara Babək Bakı Balakən Beyləqan Bərdə Biləsuvar Cəbrayıl Cəlilabad Culfa Daşkəsən Dəliməmmədli Xocalı Füzuli Gədəbəy Gəncə Goranboy Göyçay Göygöl Göytəpə Hacıqabul Horadiz Xaçmaz Xankəndi Xocalı Xocavənd Xırdalan Xızı Xudat İmişli İsmayıllı Kəlbəcər Kürdəmir Qax Qazax Qəbələ Qobustan Qovlar Quba Qubadlı Qusar Laçın Lerik Lənkəran Liman Masallı Naftalan Naxçıvan Neftçala Oğuz Ordubad Saatlı Sabirabad Salyan Samux Siyəzən Sumqayıt Şuşa Şabran Şahbuz Şamaxı Şəki Şəmkir Şərur Şirvan Tərtər Tovuz Ucar Yardımlı Yevlax Zaqatala Zəngilan Zərdab󠁧󠁢󠁷󠁬󠁳󠁿󠁧󠁢󠁷󠁬󠁳󠁿".split(" ")
+adlar = "Cristiano Ronaldo Pele Maradona Şahruddin Məmmədov Ayhan Arazlı Emil Balayev Məmməd Hüseynov Nihad Tamazov Rahil Məmmədov Rauf Hüseynli Cəbrayıl Nihad Quliyev Maksim Medvedev Zamiq Əliyev Medina Abbas Hüseynov Toral Bayramov İsmayıl İbrahimli Elvin Cəfərquliyev Cavid Bayramov Hüseyn Hüseynzadə Musa Qurbanlı Mahir Əmrəli Zaur Fərzəliyev Arif Əsədov Rəşad Sadıqov Qurban Qurbanov Tərlan Əhmədov Aslan Kərimov Rəşad Sadıqov Mahir Şükürov Mahmud Qurbanov Qurban Qurbanov Emin Ağayev Vüqar Nadirov Rahid Əmirquliyev Vaqif Cavadov Ruslan Abışov Cavid Hüseynov Rauf Əliyev Samir Abbasov Araz Abdullayev Lionel Messi󠁧󠁢󠁷󠁬󠁳󠁿󠁧󠁢󠁷󠁬󠁳󠁿".split(" ")
 
 
-@client.on(events.NewMessage(pattern="^/stag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/ftag ?(.*)"))
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
@@ -163,7 +163,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{random.choice(seherler)}](tg://user?id={usr.id}) "
+      usrtxt += f"[{random.choice(adlar)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
         await event.respond("**Tag prosesini dayandırdınız ✅**")
         return
