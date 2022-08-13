@@ -197,7 +197,7 @@ async def cancel(event):
   anlik_calisan.remove(event.chat_id)
 	
 	
-fedler = "LC","DTÖ","GOLD","XAOS","KARONA","FC","ASO","STFU","KARABAKH","TTK","GGT","TAO","DEV","FM","DAB","BQB","ATOM","ELİT","BTO","CRAZY","BTB","ALPHA","FELLİX","QANUN","RCI","SO","XTQ","BT","DTB","KİNG","HOST","AMON","DTX","TAD","KOBRA".sleep(" ")
+fedler = "LC","DTÖ","GOLD","XAOS","KARONA","FC","ASO","STFU","KARABAKH","TTK","GGT","TAO","DEV","FM","DAB","BQB","ATOM","ELİT","BTO","CRAZY","BTB","ALPHA","FELLİX","QANUN","RCI","SO","XTQ","BT","DTB","KİNG","HOST","AMON","DTX","TAD","KOBRA".split(" ")
 
 
 @client.on(events.NewMessage(pattern="^/fdtag ?(.*)"))
