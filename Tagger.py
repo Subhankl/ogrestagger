@@ -129,7 +129,7 @@ async def cancel(event):
 	
 	
 
-adlar = "Cristiano Ronaldo" "Pele" "Maradona" "Şahruddin Məmmədov" "Ayhan Arazlı" "Emil Balayev" "Məmməd Hüseynov" "Nihad Tamazov" "Rahil" "Məmmədov Rauf" "Hüseynli Cəbrayıl" "Nihad Quliyev" "Maksim Medvedev" "Zamiq Əliyev" "Medina" "Abbas Hüseynov" "Tural Bayramov" "İsmayıl İbrahimli" "Elvin Cəfərquliyev" "Cavid Bayramov" "Hüseyn Hüseynzadə" "Musa Qurbanlı" "Mahir Əmrəli" "Zaur Fərzəliyev" "Arif Əsədov" "Rəşad Sadıqov" "Qurban Qurbanov" "Tərlan Əhmədov" "Aslan Kərimov" "Rəşad Sadıqov" "Mahir Şükürov" "Mahmud Qurbanov" "Qurban Qurbanov" "Emin Ağayev" "Vüqar Nadirov" "Rahid Əmirquliyev" "Vaqif Cavadov" "Ruslan Abışov" "Cavid Hüseynov" "Rauf Əliyev" "Samir Abbasov" "Araz Abdullayev" "Lionel Messi".split(" ")
+adlar = "Cristiano Ronaldo","Pele","Maradona","Şahruddin,Məmmədov","Ayhan Arazlı","Emil Balayev" "Məmməd Hüseynov","Nihad Tamazov" "Rahil","Məmmədov Rauf","Hüseynli Cəbrayıl","Nihad Quliyev","Maksim Medvedev","Zamiq Əliyev","Medina","Abbas Hüseynov","Tural Bayramov","İsmayıl İbrahimli","Elvin Cəfərquliyev","Cavid Bayramov","Hüseyn Hüseynzadə","Musa Qurbanlı","Mahir Əmrəli","Zaur,Fərzəliyev","Arif Əsədov","Rəşad,Sadıqov","Qurban Qurbanov","Tərlan Əhmədov","Aslan Kərimov","Rəşad Sadıqov","Mahir Şükürov","Mahmud,Qurbanov","Qurban Qurbanov","Emin Ağayev","Vüqar Nadirov","Rahid,Əmirquliyev","Vaqif Cavadov","Ruslan Abışov","Cavid Hüseynov","Rauf Əliyev","Samir Abbasov","Araz Abdullayev","Lionel Messi".split(" ")
 
 @client.on(events.NewMessage(pattern="^/ftag ?(.*)"))
 async def mentionall(event):
@@ -166,9 +166,9 @@ async def mentionall(event):
       if event.chat_id not in anlik_calisan:
         await event.respond("**Tag prosesini dayandırdınız ✅**")
         return
-      if usrnum == 1:
+      if usrnum == 3:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
-        await asyncio.sleep(2)
+        await asyncio.sleep(4)
         usrnum = 0
         usrtxt = ""
         
