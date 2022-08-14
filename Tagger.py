@@ -22,7 +22,7 @@ tekli_calisan = []
 
 
 @client.on(events.NewMessage(pattern="^/start$"))
-async def start_(client: Client, message: Message):
+async def start(event):
     await message.reply_sticker("CAACAgIAAxkBAAJAhWLeod8v1WIFu0_xulGE8dxkW7StAAJ6AQACEBptIpydt0hO73LeKQQ")
     await message.reply_text(
         f"""**Merhaba {message.from_user.mention} 🎵\nBen müzik indirme botuyum !\n
