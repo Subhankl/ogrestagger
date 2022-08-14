@@ -618,13 +618,7 @@ async def mentionall(tagadmin):
 		a_+=5
 		await tagadmin.client.send_message(tagadmin.chat_id, "**[{}](tg://user?id={}) {}**".format(i.first_name, i.id, seasons))
 		sleep(0.5)
-
-# ALİVE MESAJI
-
-@bot.on_message(filters.command("alive") & filters.user(Config.API_HASH))
-async def live(client: Client, message: Message):
-    livemsg = await message.reply_text("QOCAYEF MƏLLİM  Salam Cənab Bey 🖤")
-    
+  
     
 print(">> Bot aktifdi bot hakda məlumatı @sumqayitchattt dan ala bilərsən Versiya 1.7.5<<")
 client.run_until_disconnected()
