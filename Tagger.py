@@ -8,7 +8,8 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(name)s - [%(levelname)s] - %(message)s'
 )
-LOGGER = logging.getLogger(name)
+LOGGER = logging.getLogger(__name__)
+
 
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
