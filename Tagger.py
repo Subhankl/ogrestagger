@@ -8,7 +8,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(name)s - [%(levelname)s] - %(message)s'
 )
-LOGGER = logging.getLogger(__name__)
+LOGGER = logging.getLogger(name)
 
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
@@ -23,93 +23,41 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-    await message.reply_sticker("CAACAgIAAxkBAAJAhWLeod8v1WIFu0_xulGE8dxkW7StAAJ6AQACEBptIpydt0hO73LeKQQ")
-    await message.reply_text(
-        f"""**Merhaba {message.from_user.mention} 🎵\nBen müzik indirme botuyum !\n
-● **Sizin yerinize müzik indirebilirim.**
-
-● **Komutları görmek için komutlar butonuna basınız.**
-""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "♬ Playlist", 
-                        url=f"https://t.me/QocayefBlog"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "📚 Komutlar" , callback_data= "cbbilgi"
+  await event.reply("👋 Salam \n\n💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyalı botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün\n\n/help əmrindən istifadə edin",
+            buttons=(
+                   
+		      [Button.url('ᴏᴡɴᴇʀ ❤️‍🔥', 'http://t.me/Rexxuxxnxx')],
+                      [Button.url('sᴜᴘᴘᴏʀᴛ 🐊', 'https://t.me/sumqayitchattt')],
+                      [Button.url('ʀ əｓᴍ ɪ ᴋᴀɴᴀʟ ❤️‍🔥', 'https://t.me/CreativBlog')],
+                      [Button.url('Mᴇᴋᴀɴɪᴍɪᴢ 🔖', 'https://t.me/sumqayitchattt')],
+		      [Button.url('💫 ᴍᴇɴɪ ǫʀᴜᴘᴜɴᴀ ᴇʟᴀᴠᴇ ᴇᴛ', 'https://t.me/SumqayitTaggerBot?startgroup=a')] 
                     ),
-                    InlineKeyboardButton(
-                        "💭 Sohbet Grubu",
-                        url=f"https://t.me/Sohbetikumsal"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🏮 Owner",
-                        url=f"https://t.me/sumqayitchattt"
-                    )
-                    
-                ]
-                
-           ]
-        ), 
-    ) 
-    
-
-
-
-@bot.on_callback_query(filters.regex("cbbilgi"))
-async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun komutlar menüsü 💝\n\n ● /bul - Müzik ismi veya YouTube linki (müzik indirme)\n\n● /lyrics - Şarkı ismi (şarkı sözleri)\n\n● /video - Video ismi veya YouTube linki (video indirme)\n\n</b>""",
-    reply_markup=InlineKeyboardMarkup(
-             [
-                 [
-                     InlineKeyboardButton(
-                         "🏠 Ana Sayfa", callback_data="cbstart")
-                 ] 
-             ]
-         )
-         )
-
-# ~~~~~~~~~~~~~~~~~~~~~~ gece kuşu ~~~~~~~~~~~~~~~~~~~~~~
-
-
-@bot.on_callback_query(filters.regex("cbstart"))
-async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Merhaba {query.from_user.mention} 🎵\nBen müzik indirme botuyum !\n\n● **Sizin yerinize müzik indirebilirim.**\n\n● **Komutları görmek için komutlar butonuna basınız.**""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "♬ Playlist", 
-                        url=f"https://t.me/QocayefBlog"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "📚 Komutlar" , callback_data= "cbbilgi"
+                    link_preview=False
+                   )
+@client.on(events.NewMessage(pattern="^/help$"))
+async def help(event):
+  helptext = "@SumqayitTaggerBot Komandaları 🤖\n\n/stag - Şehid adları ıle tag eder\n/cancel - botu dayandırar\n/tag <səbəb> - 5-li tag edər\n/etag <səbəb> - Emoji ilə tag edərr\n/mtag <səbəb> - mafia rolları ilə tag edər\n/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n/admins <səbəb> - Yönəticiləri tək tək tag edər\n/btag <səbəb> - Bayrağla tag edər\n/ftag <səbəb> - Futbolçu adları ilə tag edər\n/fdtag <səbəb> federasiya adları ilə tağ edər"
+  await event.reply(helptext,
+                    buttons=(
+                        [Button.url('✨️ Məni Qurupa əlavə et ✨️', 'http://t.me/SumqayitTaggerBot?startgroup=a')],
+                      [Button.url('Support 🐊', 'https://t.me/sumqayitchattt')],
+                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/CreativBlog')],
+                      [Button.url('Məkanımız 🔖', 'https://t.me/sumqayitchattt')],
+		      [Button.url('Owner ❤️‍🔥', 'https://t.me/Rexxuxxnxx')]
                     ),
-                    InlineKeyboardButton(
-                        "💭 Sohbet Grubu",
-                        url=f"https://t.me/Sohbetikumsal"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🏮 Owner",
-                        url=f"https://t.me/sumqayitchattt"
-                    )
-                    
-                ]
-                
-           ]
-        ), 
-    )
-    
+                    link_preview=False
+                   )
+	
+@client.on(events.NewMessage(pattern="^/qurup$"))
+async def help(event):
+  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə -  @Rexxuxxnxx"
+  await event.reply(helptext,
+                    buttons=(
+                      [Button.url('༒︎ Sυмqαуιт Cнαт🇦🇿 𓆙 ', 'https://t.me/sumqayitchattt')],
+                    ),
+                    link_preview=False
+                   )
+	
 sehidler = "Abdullayev Qəzənfər Polad Həşimov Anar Kazımov Ramazanov Vüsal Ümüd Heydərov Fərid Teymurov Əlövsət Məmmədov Riyad Əliyarov Şöhrət Namazov Gümrah Səfərquliyev Nəcəf Abdullayev Nurlan İnqilab Abdullayev Nicat Mirnəbi Abdullayev Məhəmməd Ramazan Allahverənov Telman Fazil Alıyev Qələndər Nofəl Abdullayev İbrahim Habil Abdullayev Elşən Sabir Abdullayev Həsən Qərib󠁧󠁢󠁷󠁬󠁳󠁿󠁧󠁢󠁷󠁬󠁳󠁿".split(" ")
 
 
