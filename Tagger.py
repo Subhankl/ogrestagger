@@ -621,7 +621,7 @@ async def mentionall(tagadmin):
 
 # ALİVE MESAJI
 
-@bot.on_message(filters.command("alive") & filters.user(Config.BOT_OWNER))
+@bot.on_message(filters.command("alive") & filters.user(Config.API_HASH))
 async def live(client: Client, message: Message):
     livemsg = await message.reply_text("QOCAYEF MƏLLİM  Salam Cənab Bey 🖤")
     
