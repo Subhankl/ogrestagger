@@ -623,7 +623,7 @@ async def mentionall(tagadmin):
 
 @bot.on_message(filters.command("alive") & filters.user(Config.BOT_OWNER))
 async def live(client: Client, message: Message):
-    livemsg = await message.reply_text(QOCAYEF MƏLLİM  Salam Cənab Bey 🖤`')
+    livemsg = await message.reply_text("QOCAYEF MƏLLİM  Salam Cənab Bey 🖤")
     
     
 print(">> Bot aktifdi bot hakda məlumatı @sumqayitchattt dan ala bilərsən Versiya 1.7.5<<")
