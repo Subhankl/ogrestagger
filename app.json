@@ -34,8 +34,8 @@
             "value": "",
             "required": true
         },
-        "Değişken adı": {
-            "description": "Değişken için açıklama",
+        "TOKEN": {
+            "description": "@botfather den ala bilərsən",
             "value": "",
             "required": true
         }
