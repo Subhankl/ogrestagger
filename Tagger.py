@@ -25,39 +25,75 @@ tekli_calisan = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply("👋 Salam \n\n💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyalı botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün\n\n/help əmrindən istifadə edin",
-            buttons=(
-                   
-		      [Button.url('ᴏᴡɴᴇʀ ❤️‍🔥', 'http://t.me/Rexxuxxnxx')],
-                      [Button.url('sᴜᴘᴘᴏʀᴛ 🐊', 'https://t.me/sumqayitchattt')],
-                      [Button.url('ʀ əｓᴍ ɪ ᴋᴀɴᴀʟ ❤️‍🔥', 'https://t.me/CreativBlog')],
-                      [Button.url('Mᴇᴋᴀɴɪᴍɪᴢ 🔖', 'https://t.me/sumqayitchattt')],
-		      [Button.url('💫 ᴍᴇɴɪ ǫʀᴜᴘᴜɴᴀ ᴇʟᴀᴠᴇ ᴇᴛ', 'https://t.me/SumqayitTaggerBot?startgroup=a')] 
+           reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🎉 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🎉", url=f"https://t.me/BT_MusicBot?startgroup=true"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🇹🇷 ᴀsɪsᴛᴀɴ", url="https://t.me/BT_MusicAsistan"
                     ),
-                    link_preview=False
-                   )
-@client.on(events.NewMessage(pattern="^/help$"))
-async def help(event):
-  helptext = "@SumqayitTaggerBot Komandaları 🤖\n\n/stag - Şehid adları ıle tag eder\n/cancel - botu dayandırar\n/tag <səbəb> - 5-li tag edər\n/etag <səbəb> - Emoji ilə tag edərr\n/mtag <səbəb> - mafia rolları ilə tag edər\n/tektag <səbəb> - İstifadəçiləri tək tək tag edər\n/admins <səbəb> - Yönəticiləri tək tək tag edər\n/btag <səbəb> - Bayrağla tag edər\n/ftag <səbəb> - Futbolçu adları ilə tag edər\n/fdtag <səbəb> federasiya adları ilə tağ edər"
-  await event.reply(helptext,
-                    buttons=(
-                        [Button.url('✨️ Məni Qurupa əlavə et ✨️', 'http://t.me/SumqayitTaggerBot?startgroup=a')],
-                      [Button.url('Support 🐊', 'https://t.me/sumqayitchattt')],
-                      [Button.url('Rəsmi Kanal 🔖', 'https://t.me/CreativBlog')],
-                      [Button.url('Məkanımız 🔖', 'https://t.me/sumqayitchattt')],
-		      [Button.url('Owner ❤️‍🔥', 'https://t.me/Rexxuxxnxx')]
+                    InlineKeyboardButton(
+                        "📝 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mamdvv"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "📚 ᴋᴏᴍᴜᴛʟᴀʀ" , callback_data= "cbbilgi"
                     ),
-                    link_preview=False
-                   )
-	
-@client.on(events.NewMessage(pattern="^/qurup$"))
-async def help(event):
-  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə -  @Rexxuxxnxx"
-  await event.reply(helptext,
-                    buttons=(
-                      [Button.url('༒︎ Sυмqαуιт Cнαт🇦🇿 𓆙 ', 'https://t.me/sumqayitchattt')],
-                    ),
-                    link_preview=False
-                   )
+                    InlineKeyboardButton(
+                        "📝 ᴋᴀɴᴀʟ", url=f"https://t.me/BTresmii"
+                    )
+                ]
+                
+           ]
+        ),
+    )
+  
+
+
+@Client.on_message(command(["bilgi", f"bilgi@{BOT_USERNAME}"]))
+async def bilgi(_, message: Message):
+      await message.reply_text("● **ɴᴏᴛ :\n\n ʙᴏᴛᴜɴ ᴀᴋᴛɪғ ᴄ̧ᴀʟɪşᴍᴀsɪ ɪᴄ̧ɪɴ sᴜ ᴜᴄ ʏᴇᴛᴋɪʏᴇ ɪʜᴛɪʏᴀᴄɪ ᴠᴀʀᴅɪʀ :\n\n> 𝖬𝖾𝗌𝖺𝗃𝗅𝖺𝗋𝗂 𝖲𝗂𝗅𝗆𝖾 ,\n> 𝖡𝖺𝗀𝗅𝖺𝗇𝗍𝗂 𝖣𝖺𝗏𝖾𝗍 𝖤𝗍𝗆𝖾 ,\n> 𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍 𝖸𝗈𝗇𝖾𝗍𝗆𝖾 ,**", 
+      reply_markup=InlineKeyboardMarkup(
+             [
+                 [
+                     InlineKeyboardButton(
+                         "📚 𝖳𝗎𝗆 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋", callback_data="herkes")
+                 ],[
+                     InlineKeyboardButton(
+                         "🗯️ 𝖠𝗇𝖺 𝖬𝖾𝗇𝗎 ", callback_data="cbstart")
+                 ],[
+                     InlineKeyboardButton(
+                         "📩 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mamdvv")
+                 ]
+             ]
+         )
+    )
+
+
+@Client.on_callback_query(filters.regex("cbbilgi"))
+async def cbbilgi(_, query: CallbackQuery):
+    await query.edit_message_text("● **𝖭𝗈𝗍 :\n\n 𝖡𝗈𝗍𝗎𝗇 𝖠𝗄𝗍𝗂𝖿 𝖢𝖺𝗅𝗂𝗌𝗆𝖺𝗌𝗂 𝗂𝖼𝗂𝗇 𝖲𝗎 𝖴𝖼 𝗒𝖾𝗍𝗄𝗂𝗒𝖾 𝗂𝗁𝗍𝗂𝗒𝖺𝖼𝗂 𝖵𝖺𝗋𝖽𝗂𝗋 :\n\n> 𝖬𝖾𝗌𝖺𝗃𝗅𝖺𝗋𝗂 𝖲𝗂𝗅𝗆𝖾 ,\n> 𝖡𝖺𝗀𝗅𝖺𝗇𝗍𝗂 𝖣𝖺𝗏𝖾𝗍 𝖤𝗍𝗆𝖾 ,\n> 𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍 𝖸𝗈𝗇𝖾𝗍𝗆𝖾 ,**", 
+    reply_markup=InlineKeyboardMarkup(
+      [
+        [
+          InlineKeyboardButton(
+            "📚 𝖳𝗎𝗆 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋", callback_data ="herkes")
+        ],
+        [
+          InlineKeyboardButton(
+            "🗯️ 𝖠𝗇𝖺 𝖬𝖾𝗇𝗎", callback_data="cbstart")
+        ],
+        [
+          InlineKeyboardButton(
+            "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/Mamdvv")
+        ]
+      ]
+     ))
 	
 sehidler = "Abdullayev Qəzənfər Polad Həşimov Anar Kazımov Ramazanov Vüsal Ümüd Heydərov Fərid Teymurov Əlövsət Məmmədov Riyad Əliyarov Şöhrət Namazov Gümrah Səfərquliyev Nəcəf Abdullayev Nurlan İnqilab Abdullayev Nicat Mirnəbi Abdullayev Məhəmməd Ramazan Allahverənov Telman Fazil Alıyev Qələndər Nofəl Abdullayev İbrahim Habil Abdullayev Elşən Sabir Abdullayev Həsən Qərib󠁧󠁢󠁷󠁬󠁳󠁿󠁧󠁢󠁷󠁬󠁳󠁿".split(" ")
 
