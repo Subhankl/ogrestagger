@@ -604,7 +604,6 @@ async def cancel(event):
   global anlik_calisan
   anlik_calisan.remove(event.chat_id)
   
-  
 @client.on(events.NewMessage(pattern="^/tektag ?(.*)"))
 async def mentionall(event):
   global tekli_calisan
