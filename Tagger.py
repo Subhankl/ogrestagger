@@ -37,7 +37,7 @@ async def start(event):
                         "🇹🇷 ᴀsɪsᴛᴀɴ", url="https://t.me/BT_MusicAsistan"
                     ),
                     InlineKeyboardButton(
-                        "📝 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Mamdvv"
+                        "📝 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/{Config.BOT_OWNER}"
                     )
                 ],
                 [
@@ -55,7 +55,7 @@ async def start(event):
   
 
 
-@Client.on_message(command(["bilgi", f"bilgi@Creativmscbot"]))
+@Client.on_message(command(["bilgi", f"bilgi@{BOT_USERNAME}"]))
 async def bilgi(_, message: Message):
       await message.reply_text("● **ɴᴏᴛ :\n\n ʙᴏᴛᴜɴ ᴀᴋᴛɪғ ᴄ̧ᴀʟɪşᴍᴀsɪ ɪᴄ̧ɪɴ sᴜ ᴜᴄ ʏᴇᴛᴋɪʏᴇ ɪʜᴛɪʏᴀᴄɪ ᴠᴀʀᴅɪʀ :\n\n> 𝖬𝖾𝗌𝖺𝗃𝗅𝖺𝗋𝗂 𝖲𝗂𝗅𝗆𝖾 ,\n> 𝖡𝖺𝗀𝗅𝖺𝗇𝗍𝗂 𝖣𝖺𝗏𝖾𝗍 𝖤𝗍𝗆𝖾 ,\n> 𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍 𝖸𝗈𝗇𝖾𝗍𝗆𝖾 ,**", 
       reply_markup=InlineKeyboardMarkup(
