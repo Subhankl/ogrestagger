@@ -22,27 +22,22 @@
         "API_HASH": {
             "description": "My.telegram.org dan ala bilersen",
             "value": "",
-            "required": true
         },
         "API_ID": {
             "description": "@apiscrapperbot ile ala bilərsən",
             "value": "",
-            "required": true
         },
         "BOT_TOKEN": {
             "description": "@botfather den ala bilərsen",
             "value": "",
-            "required": true
         },
         "BOT_USERNAME": {
             "description": "Botun Kullanıcı adını yaz"
             "value": "",
-            "required": true
         },
-        "BOT_NAME": {
-            "description": "Botun Adını yaz",
+        "BOT_OWNER": {
+            "description": "oz Adını yaz",
             "value": "",
-            "required": true
         }
     },
     "buildpacks": [
