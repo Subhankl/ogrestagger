@@ -405,7 +405,7 @@ async def cancel(event):
 rengler =  "⚫️ ⚪️ 🟤 🟣 🔵 🟢 🟡 🟠 🔴".split(" ")
 	
 	
-@client.on(events.NewMessage(pattern="^/rtag$"))
+@client.on(events.NewMessage(pattern="^/rgtag$"))
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
