@@ -1,45 +1,56 @@
 {
-  "name": "ՏႮᎷϘᎪᎽᏆͲ ͲᎪᏀᏀᎬᎡ ",
-  "logo":"https://te.legra.ph/file/9297759dad7bac69eee9f.jpg",
-  "description": "Rahid Tag Pulsuz şəkildə qrupunuzda hərkəsi tag edə bilər.",
-  "env": {
-    "TOKEN": {
-      "description": "@botfather botdan ala bilərsən (Zəruri)",
-      "value": ""
+    "name": "Tagger Bot",
+    "description": "Qocayrfin bap balaca taggeri",
+    "logo": "https://telegra.ph/file/d92458c5f05e8588b7dab.jpg",
+    "keywords": [
+        "Qocayefxx",
+        "Tagger",
+        "Bot",
+        "Üye",
+        "Etiketleme"
+    ],
+    "repository": "https://github.com/Cinaar/ogrestagger.git",
+    "success_url": "Https://t.me/sumqayitchattt",
+    "image": "heroku/python",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     },
-    "APP_ID": {
-      "description": " my.telegram.org saytdan ala bilərsən (Zəruri)",
-      "value": ""
+    "env": {
+        "API_HASH": {
+            "description": "My.telegram.org dan ala bilersen",
+            "value": "",
+            "required": true
+        },
+        "API_ID": {
+            "description": "@apiscrapperbot ile ala bilərsən",
+            "value": "",
+            "required": true
+        },
+        "TOKEN": {
+            "description": "@botfather den ala bilərsen",
+            "value": "",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "Botun Kullanıcı adını yaz"
+            "value": "",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "Botun Adını yaz",
+            "value": "",
+            "required": true
+        }
     },
-    "API_HASH": {
-      "description": "my.telegram.org saytdan ala bilərsən (Zəruri)",
-      "value": ""
-    }
-  },
-  "buildpacks": [{
-    "url": "https://github.com/heroku/heroku-buildpack-python.git"
-  }]
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
 }
-    
-     
-
-          
-     
-
-     
-            
- 
-       
-  
-    
-        
-    
-        
-            
-      
-        
-
-          
-    
-        
-       
