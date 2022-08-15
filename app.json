@@ -24,7 +24,7 @@
             "value": "",
             "required": true
         },
-        "API_ID": {
+        "APP_ID": {
             "description": "@apiscrapperbot ile ala bilərsən",
             "value": "",
             "required": true
