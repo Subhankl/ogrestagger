@@ -402,7 +402,7 @@ async def cancel(event):
   global anlik_calisan
   anlik_calisan.remove(event.chat_id)
 	
-	rengler =  "⚫️ ⚪️ 🟤 🟣 🔵 🟢 🟡 🟠 🔴".split(" ")
+rengler =  "⚫️ ⚪️ 🟤 🟣 🔵 🟢 🟡 🟠 🔴".split(" ")
 	
 	
 	@client.on(events.NewMessage(pattern="^/rtag ?(.*)"))
