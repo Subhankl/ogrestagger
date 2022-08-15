@@ -34,10 +34,6 @@
         "BOT_USERNAME": {
             "description": "Botun Kullanıcı adını yaz"
             "value": "",
-        },
-        "BOT_OWNER": {
-            "description": "oz Adını yaz",
-            "value": "",
         }
     },
     "buildpacks": [
