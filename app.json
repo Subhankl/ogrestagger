@@ -24,12 +24,12 @@
             "value": "",
             "required": true
         },
-        "APP_ID": {
+        "API_ID": {
             "description": "@apiscrapperbot ile ala bilərsən",
             "value": "",
             "required": true
         },
-        "TOKEN": {
+        "BOT_TOKEN": {
             "description": "@botfather den ala bilərsen",
             "value": "",
             "required": true
