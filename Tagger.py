@@ -24,6 +24,10 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
+if event.is_private:
+    async for usr in client.iter_participants(event.chat_id):
+     ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
+     await client.send_message(-1001771876516, f"ℹ️ **Yeni Kullanıcı -** {ad}")
   await event.reply("👋 Salam \n\n💬 Mən sizin qurupunuzda istifadəçiləri çağırmağınız üçün yaradılmış çox funksiyalı botam\n\n✅ Botun istifadə qaydasını öyrənmək üçün\n\n/help əmrindən istifadə edin",
            buttons=(
                    
