@@ -43,7 +43,7 @@ async def start(event):
                 ],
                 [
                     InlineKeyboardButton(
-                        "💡 Əmrlər" , url="https://sumqayitchattt
+                        "🧔🏻Sahibim", url="https://t.me/ElnurGenCeLi"
                     )
                 ]
                 
